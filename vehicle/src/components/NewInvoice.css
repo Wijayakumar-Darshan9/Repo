@@ -1,0 +1,174 @@
+/* Navbar.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font family */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333; /* Dark background */
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Hide by default */
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.navbar.visible {
+    transform: translateX(0); /* Show when visible */
+}
+
+.navbar.hidden {
+    transform: translateX(-100%); /* Hide when not visible */
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    padding: 15px 20px;
+}
+
+.navbar-list li a,
+.navbar-list li button {
+    
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar-list li a:hover,
+.navbar-list li button:hover {
+    background-color: #575757; /* Darker shade on hover */
+}
+
+.log-button {
+    background-color: #d9534f; /* Red button color */
+    border: none;
+    padding: 10px;
+    
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    position: absolute; /* Position it at the bottom */
+    bottom: 20px; /* Add some space from the bottom */
+}
+
+.log-button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* New Invoice Container Styles */
+
+.new-invoice-container {
+    background-color: #f4f7fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.new-invoice-container h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-invoice-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-invoice-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.new-invoice-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.new-invoice-container input:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+}
+
+.new-invoice-container button {
+    background-color: #c6e4d6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.new-invoice-container button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.new-invoice-container .medicine-field {
+    display: flex;
+    gap: 10px;
+}
+
+.new-invoice-container .medicine-field input {
+    flex: 1;
+}
+
+.new-invoice-container .add-medicine-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-invoice-container .add-medicine-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

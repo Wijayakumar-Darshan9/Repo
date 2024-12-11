@@ -1,0 +1,131 @@
+/* General Form Styling */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.bg {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.feedback-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}
+
+.feedback-form p {
+  color: green;
+  font-weight: bold;
+}
+
+/* Modal Styling */
+.modal {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+}
+
+.modal div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.modal button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.modal button.on .star {
+  color: gold;
+}
+
+.modal button.off .star {
+  color: #ccc;
+}
+
+.modal p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Rating Submit Button */
+.modal button:last-child {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:last-child:hover {
+  background-color: #0056b3;
+}
